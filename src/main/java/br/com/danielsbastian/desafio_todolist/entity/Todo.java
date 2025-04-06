@@ -8,14 +8,10 @@ public class Todo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String name;
     private String description;
     private boolean done;
     private int priority;
-
-    public Todo() {
-    }
 
     public Todo(String name, String description, boolean done, int priority) {
         this.name = name;
